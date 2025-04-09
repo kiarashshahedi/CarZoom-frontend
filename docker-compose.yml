@@ -1,11 +1,9 @@
-version: '3.9'
-
 services:
 
   # frontend service
   frontend:
     build:
-      context: ./frontend
+      context: .
       dockerfile: Dockerfile
     command: npm run dev
     volumes:
